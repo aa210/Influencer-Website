@@ -175,29 +175,3 @@ jQuery(function($) {
             }
         });
     });
-
-
-/*http://jsfiddle.net/YWn9t/ */
-
- /*
-- Services: Header Photo; list/table of things offered with headings. Maybe link; 3 main areas with heading and description; 
-
-Portfolio(model dropdown): 
-- Sliding scroll
-- Click Slide
-- Basic gallery w/ popUps
-Blog/ News: WP Install List of Posts w/ Date
-Videos: 
-- Embedded Playlist (ie från)
-- Slideshow of Videos
-Resume: Text w/ Categories, Maybe Image.
-Press: List of Logos , Clippings, Videos of Features i.e. Shan, LeMand
-Brands: Gallery of clickable images: logos, photos, screenshots of Campagins/Partnerships i.e. Shan
-Contact: 
-- Subscriber pop box: jade, princeEA, OA
-
-
-Info:
-- http://css-workshop.com/hover-box-text-over-images-on-hover-and-more/
-- https://www.w3schools.com/Bootstrap/bootstrap_typography.asp
-*/
