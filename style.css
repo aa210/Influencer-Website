@@ -1,16 +1,17 @@
 @import 'https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans|Montserrat|Amatic+SC|Kaushan+Script';
 
-#aboutPage .text-muted, #campaignPage h4, #aboutPage h3, .text-light, #blogPage h4{
+#about-page .text-muted, #campaign-page h4, #about-page h3, .text-light, #blog-page h4, #contact-page h6{
     line-height:1.4;
   }
 
-h1, h2 ,button,.navbar-brand{ text-transform:uppercase;
+h1, h2 ,button,.navbar-brand{ 
+  text-transform:uppercase;
   font-family: "Abril Fatface";
 }
-.logoMobile, .navbar-brand{
+.logo-home, .navbar-brand{
   font-family: "Amatic SC";
 }
-.logoMobile{
+.logo-home{
   font-size:3em;
 }
 .navbar-brand{
@@ -21,14 +22,14 @@ h1, h2 ,button,.navbar-brand{ text-transform:uppercase;
 
 
 @media screen and (max-width:550px){
-  .brandPics{
+  .brand-pics{
   width:96%;
   display:inline-block;
   margin:2%;  
 }
 }
 @media screen and (min-width:551px){
-   #brandPics{
+   #brand-pics-section{
   max-width:48%;
   display:inline-block;
   margin:1%;  
@@ -37,23 +38,16 @@ h1, h2 ,button,.navbar-brand{ text-transform:uppercase;
 }
 @media screen and (max-width:765px) {
   
-  #aboutPage .text-muted, #campaignPage h4{
+  #about-page .text-muted, #campaign-page h4{
     font-size:0.9em;
   }
   
-  #aboutPage h4 i{
+  #about-page h4 i{
     font-size:1.1em;
     text-align:center;
   }
   
- #homePage{
-    background-image: url("http://highlinewest.com/wp/wp-content/uploads/2016/01/model-headshots-side-turn-vancouver-bc-karmiel.jpg");
-    background-size:100% 100%;
-  margin:0 auto;
-  width:100%;
-  height:90vh;
-  padding: 0 5% 15%;
-}
+
   
   .headers h1{
   font-size: 3em;
@@ -62,105 +56,92 @@ h1, h2 ,button,.navbar-brand{ text-transform:uppercase;
   height: 70vh;
 }
   
-  #brandGallery{
+  
+  #brand-gallery{
     display:none;
   }
-  #brandGalleryMobile{
+  #brand-gallery-mobile{
     display:block;
   }
-  .brandPicsMobile{
+  .brand-pics-mobile{
     width:80%;
     margin: 1% auto;
     text-align:center;
     
   }
-  #aboutPage col-xs-12 .img-responsive{
+  #about-page col-xs-12 .img-responsive{
       display:hidden;  
   }
   
-  #mobileMenuBtn{
-    //display:inline-block;
+  #mobile-menu-btn{
     position:fixed;
     z-index:4;
   }
 	
   
-  #title{
-  display:inline-block;
-  width:100%;
-  padding: 140px 0%;  
-  margin:0 auto;
-  text-align:center;
-  color:white;
-  //background: rgba(0,0,0,.3);
   
-}
   
   .pages{
-  padding: 0;
+  padding: 0px 0% 0px;
     background-color:white;
 }
   
   #navigation{display:none;}
   
-  .videoPics{
+  .video-pics{
   display:none;
  }
   
  
   
-  #videoPage .hvrbox{
+  #video-page .hvrbox{
     display:none;
   }
   
   
-  #videoEmbeds{
+  #video-embeds{
     display:inline-block;
   }
   
 }
 @media screen and (min-width:765px) {
   
-   #aboutPage .text-muted, #campaignPage h4{
+   #about-page .text-muted, #campaign-page h4{
     font-size:1.2em;
   }
   
-  #aboutPage h4 i{
+  #about-page h4 i{
     font-size:1.5em;
     text-align:center;
   }
   
- #homePage{
+ #home-page{
     background-image: url("http://highlinewest.com/wp/wp-content/uploads/2016/01/model-headshots-side-turn-vancouver-bc-karmiel.jpg");
     background-size:100% 100%;
-  margin:0 auto;
+  margin:0% auto;
   width:100%;
-  height:100vh;
+  height:80vh;
 }
   
   .headers h1{
   font-size: 4.5em;
 }
   
-  #brandGallery{
+  #brand-gallery{
     display:block;
   }
-  #brandGalleryMobile{
+  #brand-gallery-mobile{
     display:none;
   }
 ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block; 
 }
-  #videoEmbeds{
+  #video-embeds{
     display:none;
   }
 
-  #brandTopPic{
-    display:inline-block;
-    width: 80%;
-  }
   
-  #mobileMenuBtn{ 
+  #mobile-menu-btn{ 
     display:none;
   } 
   .pages{
@@ -168,7 +149,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     background-color:white;
 }
 
-.videoPics{
+.video-pics{
   display:inline-block;
  }
 
@@ -190,9 +171,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 	transition: all 0.4s ease-in-out 0s;  
 }
   
-  .selected{
-    //border-bottom: 2px solid;
-  }
+ 
   #navigation .selected a:hover{
     border-bottom:none;
     
@@ -205,66 +184,68 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   line-height:1.4;
 }
 
-#aboutPage{
+#about-page{
   text-align:center;
-  //padding: 0 4%;
 }
-#aboutPage .row{
+#about-page .row{
   padding: 3% 10%;
   margin: 2% auto;
 }
 
 #stats{
-  padding: 0 10% 5%;
+  padding: 0% 10% 5%;
 }
 
-#aboutPage #stats h4{
-  text-align:center;
-}
-
-#aboutPage #stats i{
-  //width:30%;
+#about-page #stats i{
   font-size:2em;
 }
 
-#aboutPage .text-muted{
+#about-page .text-muted{
   text-align:left;
 }
 
-#aboutHeader{
+#about-header{
   background-image: url("https://i.pinimg.com/736x/31/81/88/31818872001179a9b83aba3dbf292996--summer-photography-lifestyle-photography.jpg");  
   background-size:fixed;
   color:white;
 }
 
-#blogHeader{
+#about-page button{
+  border:3px solid white; 
+  background: rgba(55,55,55,.8);   color:white;
+  font-size:0.8em;
+}
+#about-page button:hover{
+  border:2px solid white; color:white; background-color:rgba(0,0,0,0);
+  font-size:0.8em;
+}
+
+#blog-header{
    background-image: url("https://cdn.shopify.com/s/files/1/1004/0238/files/IMG_0719.JPG?8668461497039251068");  
   background-size:200%;
   color:white; 
 }
 
-#blogPage .col-xs-12 {
-  margin: 1% auto;
+#blog-page .col-xs-12 {
+  margin: 3% auto;
   
 }
-#blogPage h1{
+#blog-page .col-xs-12 img {
+  width: 70%;
+}
+#blog-page h1, #campaign-page h1{
   text-align:center;
   font-size: 3em;
 }
-#blogPage h3{
+#blog-page h3{
   font-weight:bold;
 }
 
-#aboutPage .row h2, #campaignPage .main h1{
+#about-page .row h2, #campaign-page .main h1{
   font-size: 1.8em;
   text-align:left;
 }
 
-.timer{
-  width:200px; margin:20px auto;text-align:center;display:block;font-size:2em}
-
-#help{
-  width:500px; margin:20px auto;text-align:center;display:block;font-size:1.4em}
 
 body{
   font-family:"Montserrat"; 
@@ -273,21 +254,18 @@ body{
   background-color: #1a1a1a;
 }
 
-#brandGallery{
+#brand-gallery{
   margin:2%;
   overflow:hidden;
   background-size:cover;
 }
 
-.brandPics{
+.brand-pics{
   width: 47%;
   position: relative;
   float: left;
-  //display:inline;
   margin:1%;
 }
-
-
 
 #brand1{
   height: 600px;
@@ -325,14 +303,14 @@ body{
   background-color: #465c5c;
 }
 
-#footer .btn-dark{
+footer .btn-dark{
   color: #fefbf9;
   background-color: #465c5c;
   padding:5px;
 }
 
 
-.btn-dark:hover, #footer .btn-dark:hover {
+.btn-dark:hover, footer .btn-dark:hover {
   color:#fefbf9;
   background-color: #0f1c1a;
   -moz-transition: all 0.4s ease-in-out 0s;
@@ -342,79 +320,63 @@ body{
   
 }
 
-#campaignTestimonials {
-  padding:0;
-  margin: 0 auto;
+#campaign-testimonials {
+background: rgba(1,1,1,0.6);
+  padding:7%;
+  margin: 0% auto;
   background-color: #2a2a2a;
-  background-image: url("http://www.loragradyphotography.com/wp-content/uploads/2014/02/LoraGradyPhotography_0370.jpg");
   background-size:cover;
   color: white;
   text-align:center;
 }
 
-#campaignTestimonials blockquote{
-  //text-align:left;
+#campaign-testimonials blockquote{
   font-weight:bold;
   border-left: 0px;
   font-size:1em;
 }
 
-#campaignTestimonials footer{
+#campaign-testimonials footer{
   text-align:center;
   color: white;
 }
 
-#campaignPage h3{
-  padding: 0 4%;
-  text-align: left;
-}
-
-#campaignHeader{
+#campaign-header{
   color:white;
-  background-image: url("https://richard-wakefield.co.uk/wp-content/uploads/2018/02/gods-own-junkyard-model-photo-shoot-galixeon-6.jpg");
+  background-image: url("https://i0.hippopx.com/photos/291/294/473/background-image-blue-white-clouds-thumb.jpg");
   background-size: 100% 100%; 
 }
 
-#contactHeader{
-  background-image: url("http://www.loragradyphotography.com/wp-content/uploads/2014/02/LoraGradyPhotography_0370.jpg");
+#contact-header{
+  background-image: url("https://c.pxhere.com/photos/26/3b/camera_nikon_lens_photography_photographic_equipment-157114.jpg!d");
   color: white;  
   background-size: 100% 100%;
 }
 
 
-#carousel-example{
-  margin: 0 auto;
-}
 
-#campaignPage ul{
+#campaign-page ul{
   text-align:center;
   list-style-type:none;
 }
 
-#campaignPage ul li{
-  
-}
-
-#campaignPage {
+#campaign-page {
   text-align:center;
 }
 
-#campaignPage button{
+#campaign-page button{
   margin-bottom: 10%;
 }
 
-#contactPage {
-  width:100%;
-}
 
-#videoPage button, #blogPage button, #contactPage button{
-  //background-color: #2a2a2a;
+
+#video-page button, #blog-page button, #contact-page button{
   background-color:rgba(0,0,0,0.9);
   border:2px solid #1a1a1a;
    color: white;
   font-size:0.8em;
 }
-#videoPage button:hover, #blogPage button:hover, #contactPage button:hover{
+#video-page button:hover, #blog-page button:hover, #contact-page button:hover{
   background: rgba(0,0,0,0);
   color:#1a1a1a;
   -moz-transition: all 0.4s ease-in-out 0s;
@@ -424,36 +386,32 @@ body{
 }
 
 
-#footer{
+footer{
   color:#fefbf9;
   background-color:#1a1a1a;
-  //position: absolute;
-  padding: 3% 0;
+  padding: 3% 0%;
   bottom: 0px;
   width:100%;
-  margin: 0 auto;
+  margin: 0% auto;
   text-align:center;
   font-size:.8em;
 }
-#footer button{
-}
-#footer li a{
+
+footer li a{
   display:inline;
   color:#fefbf9;
   text-decoration:none;
 }
 
 
-
 .headers{ 
   text-align:center;
   font-weight:bold;
   background-attachment:fixed; background-repeat: no-repeat; background-size: 100% 100%; 
-  padding:0;
-  margin: 0 auto;
+  padding:0% 0%;
+  margin: 0% auto;
   height: auto;
 }
-
 
 
 .hidden{
@@ -461,7 +419,7 @@ body{
   opacity:0;
 }
 
-#homePage img:hover{
+#home-page img:hover{
   opacity:1;
   cursor:default;
 }
@@ -469,13 +427,11 @@ body{
 .hvrbox {
 	position: relative;
   display:inline;
-  margin:0 auto;
+  margin:0% auto;
 }
 .hvrbox .hvrbox-layer_top {
 	opacity: 0;
 	position: absolute;
-	//top: 0;
-	//left: 0;
 	right: 0;
 	bottom: 0;
 	width: 100%;
@@ -516,15 +472,15 @@ input[placeholder]{
 img{
   width:100% ;
   height:100%;
-  margin: 0 auto;
+  margin: 0% auto;
 }
 
-#mobileMenu a, #mobileMenu h1{
+#mobile-menu a, #mobile-menu h1{
   color:white;
 }
 
 
-#mobileMenu a:hover, #mobileMenu h1:hover{
+#mobile-menu a:hover, #mobile-menu h1:hover{
   color: #409eef;
   text-decoration:none;
   -moz-transition: all 0.4s ease-in-out 0s;
@@ -533,10 +489,13 @@ img{
 	transition: all 0.4s ease-in-out 0s;  
 }
 
-#mobileMenu h2{
+#mobile-menu li{
   font-size: 1.5em;
+  list-style-type:none;
+  font-family: "Abril Fatface";
+  margin: 1% auto;
 }
-#mobileMenuBtn {
+#mobile-menu-btn {
   position:fixed;
   right: 10px;
   top:3px;
@@ -554,11 +513,10 @@ img{
   background-color: rgba(250,250,250, 0.9);
   border: none;
   z-index:4;
-  padding: 5px;
+  padding: 5px 8px;
   font-size:.6em;
   color:#3a3a3a;
   position:fixed;
-  //top:0;
   width:100%;
 }
 
@@ -591,7 +549,7 @@ img{
   padding:10%;
 }
 
-.socialBtns{
+.social-btns{
   list-style-type:none;
   display:inline;
   font-size: 1.3em;
@@ -600,7 +558,7 @@ img{
 } 
 
 
-#footer .socialBtns a:hover{
+footer .social-btns a:hover{
   border-bottom:none; color:#409eef;
   -moz-transition: all 0.4s ease-in-out 0s;
 	-webkit-transition: all 0.4s ease-in-out 0s;
@@ -610,57 +568,34 @@ img{
   
 } 
 
-#subscriberBox{
-  background-color:#1a1a1a;
-  color:#fefbf9;
-  margin:0 auto;
-  text-align:center;
-  padding: 2px;
-}
-
-#videoPage{
+#video-page{
   text-align: center;
-  margin:0 auto;
+  margin:0px auto;
 }
 
-#videoPage iframe{
+#video-page iframe{
   margin: 1% auto 5%;
 }
 
-.videoPics{
+.video-pics{
   margin:3% auto;
 }
-.videoPics:hover{
+.video-pics:hover{
   cursor:pointer;
 }
-#videosHeader{
+#videos-header{
   background-image: url("https://s3.amazonaws.com/pbblogassets/uploads/2017/08/27130641/Photography-Cover.jpg");
   background-size:100% 100%;
   color:white;
 }
 
-#subscribe{
-  display:inline;
-}
-
-#footerMain{
-  display:inline;
-}
 
 #social{
   display:inline;
   text-align:center;
 }
 
-#socialBtns {color:white; display:inline; text-decoration:none;} 
 
-#socialBtns a{ 
-  text-decoration: none;
-  //background-color:#1a1a1a; 
-  //border-radius:5%; 
-  padding:0px 5px;
-  margin: auto;
-} 
 .overlay { 
   position: fixed;
   z-index:3;
@@ -699,12 +634,44 @@ img{
   position: relative;
   transition: all 5s ease-in-out;
 }
-#aboutPage button{
-  border:3px solid white; 
-  background: rgba(55,55,55,.8);   color:white;
-  font-size:0.8em;
+
+
+
+
+.video-page h3 {
+  margin: 10% auto;
 }
-#aboutPage button:hover{
-  border:2px solid white; color:white; background-color:rgba(0,0,0,0);
-  font-size:0.8em;
+
+label {
+  width: 100%;
+  margin: 2%;
+}
+
+.header-overlay {
+ background: rgba(1,1,1,0.2);
+  padding:20% 10%;
+}
+
+ #home-page{
+    background-image: url("");
+   background-color:black;
+    background-size:100% 100%;
+  margin:0% auto;
+  width:100%;
+  height:90vh;
+  padding: 0% 5% 15%;
+}
+
+#home-page-text{
+  display:inline-block;
+  width:100%;
+  padding: 100px 0px;  
+  margin:0% auto;
+  text-align:center;
+  color:white;
+  
+}
+
+#contact-page {
+  width:100%;
 }
