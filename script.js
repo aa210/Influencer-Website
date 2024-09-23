@@ -1,12 +1,12 @@
 $(document).ready(function() { 
  
-  $(".aboutLink").click(function() {
-    $("#homePage").addClass("hidden");
-    $("#contactPage").addClass("hidden");
- $("#blogPage").addClass("hidden");  
- $("#videoPage").addClass("hidden");  
-   $("#campaignPage").addClass("hidden");   
-    $("#aboutPage").removeClass("hidden");
+  $(".about-link").click(function() {
+    $("#home-page").addClass("hidden");
+    $("#contact-page").addClass("hidden");
+ $("#blog-page").addClass("hidden");  
+ $("#video-page").addClass("hidden");  
+   $("#campaign-page").addClass("hidden");   
+    $("#about-page").removeClass("hidden");
     
     
    $(".selected").removeClass("selected");
@@ -17,80 +17,81 @@ $(document).ready(function() {
     
   });
   
-  $(".blogLink").click(function() {
-    $("#homePage").addClass("hidden");
-    $("#contactPage").addClass("hidden");
-    $("#aboutPage").addClass("hidden");
-  $("#campaignPage").addClass("hidden");
-$("#videoPage").addClass("hidden");     $("#blogPage").removeClass("hidden");  
+  $(".blog-link").click(function() {
+    $("#home-page").addClass("hidden");
+    $("#contact-page").addClass("hidden");
+    $("#about-page").addClass("hidden");
+  $("#campaign-page").addClass("hidden");
+$("#video-page").addClass("hidden");     
+    $("#blog-page").removeClass("hidden");  
    $(".selected").removeClass("selected");
     
     $(this).addClass("selected");
   });  
-  $(".contactLink").click(function() {
-    $("#homePage").addClass("hidden");
-    $("#aboutPage").addClass("hidden");
-    $("#blogPage").addClass("hidden");
-  $("#campaignPage").addClass("hidden");
- $("#videoPage").addClass("hidden");  
+  $(".contact-link").click(function() {
+    $("#home-page").addClass("hidden");
+    $("#about-page").addClass("hidden");
+    $("#blog-page").addClass("hidden");
+  $("#campaign-page").addClass("hidden");
+ $("#video-page").addClass("hidden");  
       
-    $("#contactPage").removeClass("hidden");
+    $("#contact-page").removeClass("hidden");
    $(".selected").removeClass("selected");
     
     $(this).addClass("selected");
   });
   
- $(".homeLink").click(function() {
-    $("#homePage").removeClass("hidden");   
-    $("#aboutPage").addClass("hidden");
-     $("#contactPage").addClass("hidden");
- $("#blogPage").addClass("hidden");
-  $("#campaignPage").addClass("hidden");
-  $("#videoPage").addClass("hidden");  
+ $(".home-link").click(function() {
+    $("#home-page").removeClass("hidden");   
+    $("#about-page").addClass("hidden");
+     $("#contact-page").addClass("hidden");
+ $("#blog-page").addClass("hidden");
+  $("#campaign-page").addClass("hidden");
+  $("#video-page").addClass("hidden");  
    $(".selected").removeClass("selected");
     $(this).addClass("selected");
   }); 
   
- $(".videoLink").click(function() {
-    $("#homePage").addClass("hidden");
-    $("#aboutPage").addClass("hidden");
-    $("#blogPage").addClass("hidden");
-    $("#contactPage").addClass("hidden");
-   $("#campaignPage").addClass("hidden");
-$("#videoPage").removeClass("hidden");  
+ $(".video-link").click(function() {
+    $("#home-page").addClass("hidden");
+    $("#about-page").addClass("hidden");
+    $("#blog-page").addClass("hidden");
+    $("#contact-page").addClass("hidden");
+   $("#campaign-page").addClass("hidden");
+$("#video-page").removeClass("hidden");  
    $(".selected").removeClass("selected");
     
     $(this).addClass("selected");
   });  
   
   
-$(".campaignLink").click(function() {
-    $("#homePage").addClass("hidden");
-    $("#aboutPage").addClass("hidden");
-    $("#blogPage").addClass("hidden");
+$(".campaign-link").click(function() {
+    $("#home-page").addClass("hidden");
+    $("#about-page").addClass("hidden");
+    $("#blog-page").addClass("hidden");
  
- $("#videoPage").addClass("hidden");  
+ $("#video-page").addClass("hidden");  
       
-    $("#contactPage").addClass("hidden");
+    $("#contact-page").addClass("hidden");
   
-  $("#campaignPage").removeClass("hidden");
+  $("#campaign-page").removeClass("hidden");
    $(".selected").removeClass("selected");
     
     $(this).addClass("selected");
   });  
 
-  $("#videoPics1").click(function() {
+  $("#video-pics1").click(function() {
     $("#video2").addClass("hidden");
     $("#video3").addClass("hidden"); $("#video1").removeClass("hidden");
      
   });
-   $("#videoPics2").click(function() {
+   $("#video-pics2").click(function() {
     $("#video1").addClass("hidden");
     $("#video3").addClass("hidden");
     $("#video2").removeClass("hidden");
       
   });
-  $("#videoPics3").click(function() {
+  $("#video-pics3").click(function() {
     $("#video2").addClass("hidden");
     $("#video1").addClass("hidden");
     $("#video3").removeClass("hidden");
@@ -99,79 +100,4 @@ $(".campaignLink").click(function() {
   
 });
 
-(function($) {
-    $.fn.countTo = function(options) {
-        // merge the default plugin settings with the custom options
-        options = $.extend({}, $.fn.countTo.defaults, options || {});
 
-        // how many times to update the value, and how much to increment the value on each update
-        var loops = Math.ceil(options.speed / options.refreshInterval),
-            increment = (options.to - options.from) / loops;
-
-        return $(this).each(function() {
-            var _this = this,
-                loopCount = 0,
-                value = options.from,
-                interval = setInterval(updateTimer, options.refreshInterval);
-
-            function updateTimer() {
-                value += increment;
-                loopCount++;
-                $(_this).html(value.toFixed(options.decimals));
-
-                if (typeof(options.onUpdate) == 'function') {
-                    options.onUpdate.call(_this, value);
-                }
-
-                if (loopCount >= loops) {
-                    clearInterval(interval);
-                    value = options.to;
-
-                    if (typeof(options.onComplete) == 'function') {
-                        options.onComplete.call(_this, value);
-                    }
-                }
-            }
-        });
-    };
-
-    $.fn.countTo.defaults = {
-        from: 0,  // the number the element should start at
-        to: 100,  // the number the element should end at
-        speed: 1000,  // how long it should take to count between the target numbers
-        refreshInterval: 100,  // how often the element should be updated
-        decimals: 0,  // the number of decimal places to show
-        onUpdate: null,  // callback method for every time the element is updated,
-        onComplete: null,  // callback method for when the element finishes updating
-    };
-})(jQuery);
-
-jQuery(function($) {
-        $('.timer3').countTo({
-            from: 10,
-            to: 25,
-            speed: 4000,
-            refreshInterval: 50,
-            onComplete: function(value) {
-                console.debug(this);
-            }
-        });
-        $('.timer2').countTo({
-            from: 5,
-            to: 17,
-            speed: 4000,
-            refreshInterval: 50,
-            onComplete: function(value) {
-                console.debug(this);
-            }
-        });
-        $('.timer1').countTo({
-            from: 15,
-            to: 32,
-            speed: 4000,
-            refreshInterval: 50,
-            onComplete: function(value) {
-                console.debug(this);
-            }
-        });
-    });
